@@ -1,9 +1,8 @@
 package fr.minuskube.inv;
 
+import java.util.function.Consumer;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
-
-import java.util.function.Consumer;
 
 public class ClickableItem {
 

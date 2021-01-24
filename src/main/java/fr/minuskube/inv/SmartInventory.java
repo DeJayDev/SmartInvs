@@ -3,17 +3,16 @@ package fr.minuskube.inv;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.opener.InventoryOpener;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unused", "unchecked"})
 public class SmartInventory {
 
     private String id;
@@ -103,7 +102,7 @@ public class SmartInventory {
         private InventoryProvider provider;
         private SmartInventory parent;
 
-        private List<InventoryListener<? extends Event>> listeners = new ArrayList<>();
+        private final List<InventoryListener<? extends Event>> listeners = new ArrayList<>();
 
         private Builder() {}
 

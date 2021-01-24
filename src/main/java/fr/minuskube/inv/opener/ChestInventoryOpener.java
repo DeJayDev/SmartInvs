@@ -28,7 +28,11 @@ public class ChestInventoryOpener implements InventoryOpener {
 
     @Override
     public boolean supports(InventoryType type) {
-        return type == InventoryType.CHEST || type == InventoryType.ENDER_CHEST;
+        return
+            type == InventoryType.CHEST ||
+            type == InventoryType.ENDER_CHEST ||
+            type == InventoryType.SHULKER_BOX ||
+            type == InventoryType.BARREL;
     }
 
 }
